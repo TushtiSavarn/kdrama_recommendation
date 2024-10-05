@@ -1,0 +1,127 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h1 {
+    font-size: 26px;
+    margin-bottom: 25px;
+    color: #007bff;
+}
+
+label {
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#recommendations {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.recommendation {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    text-align: left;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: auto; /* Allow scrolling if content is too large */
+}
+
+.recommendation h3 {
+    color: #333;
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+
+.recommendation .genre {
+    color: #666;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.recommendation .synopsis {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.5;
+}
+
+#suggestions {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#suggestions li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+#suggestions li:hover {
+    background-color: #e0e0e0;
+}
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    .recommendation h3 {
+        font-size: 18px;
+    }
+}
